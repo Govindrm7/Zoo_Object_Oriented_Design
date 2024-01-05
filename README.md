@@ -1,27 +1,37 @@
-# Welcome to the course CSYE6200 - Object Oriented Design
-> Northeastern University, College of Engineering
+# Zoo API Design and Implementation
 
+This project focuses on designing and implementing an API for a zoo, demonstrating the knowledge of designing and using APIs specified as a concrete class, an abstract class, and an interface. The project also involves creating derived classes from these APIs and utilizing them in a Zoo class.
 
-## Professor: Daniel Peters
+## API Design
 
-### Requirements
-1. Eclipse or VS Code or IntelliJ.
+The API will be designed to provide resources related to zoo animals. It will include the following components:
 
-Note: If you are using Eclipse, please have git CLI installed on your system or GitHub Desktop to commit the code in this repository
+1. **Concrete Class API (AnimalAPI):** This API will be implemented as a concrete class to provide specific functionalities for interacting with zoo animals.
 
-### SetUp Instructions
-1. Please clone the repository on your local system
-2. For Eclipse Import the project as Existing Maven Project, For IntelliJ you can directlty open it using 'Get from VCS'.
-4. All code should be pushed to the main branch
-3. Ensure the GitHub actions are successful post push
+2. **Abstract Class API (AbstractAnimalAPI):** An abstract class API will be designed to define common functionalities for zoo animals.
 
-Submissions will have deadlines, failed GitHub Actions would result in point deductions.
+3. **Interface Class API (AnimalisticAPI):** This API will be implemented as an interface to provide a contract for interacting with zoo animals.
 
-### References
-1. Cloning a Repository: <https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository>
-2. Any GitHub Setup: Please refer to the Git & GitHub Fundamentals Repository shared to you by your respective TA and refer the README.md section
+## Derived Classes
 
-Please reach out to your respective TA if you need any help in regards with submission/ GitHub
+Three sets of derived classes will be created from the above APIs, resulting in a total of 9 derived classes (5 points each). These derived classes will demonstrate the use of the APIs in different contexts.
 
-Author:
-- Ruchika Sharma (sharma.ruc@northeastern.edu)
+## Zoo Classes
+
+Three zoo classes will be created to hold and display animal objects derived from the respective APIs:
+
+1. **ZooAnimals:** This class will hold and display animal objects derived from AnimalAPI.
+
+2. **ZooAbstractAnimals:** This class will hold and display animal objects derived from AbstractAnimalAPI.
+
+3. **ZooAnimalisticAnimals:** This class will hold and display animal objects derived from AnimalisticAPI.
+
+## Object API Demonstration
+
+A fourth zoo class, ZooObjectAnimals, will be created to demonstrate that all animal objects created from the three APIs work with the Object API.
+
+## Additional Information
+
+The README.md file will be updated with detailed instructions on how to use the APIs and the derived classes, along with examples of their usage.
+
+For any questions or further information, please contact [Your Name] at [Your Email Address].
